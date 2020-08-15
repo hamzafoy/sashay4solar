@@ -1,3 +1,10 @@
+/*--- Font Families ---*/
+
+@font-face {font-family: "Oswald-Light"; src: url("fonts/Oswald-Light.ttf"); }
+@font-face {font-family: "Taviraj-Medium"; src: url("fonts/Taviraj-Medium.ttf"); }
+
+/*--- Base Styles ---*/
+
 body, ul, li, h1, h2, span {
 	margin: 0;
 	padding: 0;
@@ -7,10 +14,12 @@ ul {
 	list-style: none;
 }
 
+/*--- Landing Page Styles ---*/
+
 body{
     background-image: url(img/solar_panel_2.png);
     background-size: cover;
-    background-repeat: no-repeat;
+	background-repeat: no-repeat;
 }
 
 .slidingMenu {
@@ -20,7 +29,6 @@ body{
     top: 140px;
     overflow: hidden;
 	right: 1px;
-	font-family: Arial, Helvetica, sans-serif;
 }
 
 .slidingMenu li {
@@ -44,47 +52,51 @@ body{
 	-webkit-border-bottom-left-radius: 8px;
 	border-top-left-radius: 8px;
 	border-bottom-left-radius: 8px;
-	-moz-box-shadow:1px 1px 5px #000;
-	-webkit-box-shadow:1px 1px 5px #000;
-	box-shadow:1px 1px 5px #000;
+	-moz-box-shadow: 1px 1px 5px #000;
+	-webkit-box-shadow: 1px 1px 5px #000;
+	box-shadow: 1px 1px 5px #000;
 }
 
 .slidingMenu li a {
-        font-size:66px;
-        text-transform:uppercase;
-        text-decoration: none;
-        color: #ffd571;
-        outline: none;
-        text-indent:5px;
-        z-index: 10;
-        display: block;
-        float: right;
-        height: 66px;
-        line-height: 66px;
-        position: relative;
-        overflow: hidden;
-        padding-right:10px;
+	font-size:60px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #ffd571;
+	outline: none;
+	text-indent: 5px;
+	z-index: 10;
+	display: block;
+	float: right;
+	height: 66px;
+	line-height: 76px;
+	position: relative;
+	overflow: hidden;
+	padding-right: 10px;
+	letter-spacing: -0.04em;
+	font-family: Taviraj-Medium;
 }
 
-/* Descriptions */
+#menu_title_a {
+	text-decoration: underline !important;
+}
 
 .slidingMenuDesc{
-	margin-top:140px;
-	position:relative;
+	margin-top: 140px;
+	position: relative;
 }
 
 .slidingMenuDesc div{
 	background: #5d684b;
 	height: 68px;
-	padding-right:5px;
-	left:-5px;
-	width:0px;
-	margin-top:2px;
-	overflow:hidden;
-	position:absolute;
-	-moz-box-shadow:1px 1px 5px #000;
-	-webkit-box-shadow:1px 1px 5px #000;
-	box-shadow:1px 1px 5px #000;
+	padding-right: 5px;
+	left: -5px;
+	width: 0px;
+	margin-top: 2px;
+	overflow: hidden;
+	position: absolute;
+	-moz-box-shadow: 1px 1px 5px #000;
+	-webkit-box-shadow: 1px 1px 5px #000;
+	box-shadow: 1px 1px 5px #000;
 	-webkit-border-top-right-radius: 8px;
 	-webkit-border-bottom-right-radius: 8px;
 	border-top-right-radius: 8px;
@@ -92,15 +104,16 @@ body{
 }
 
 .slidingMenuDesc div span {
-	font-size:36px;
+	font-size: 42px;
 	color: #ffd571;
-	text-indent:5px;
+	text-indent: 5px;
 	z-index: 10;
 	display: block;
 	height: 66px;
-	line-height: 66px;
-	position:absolute;
-	right:10px;
-	margin-left:5px;
-	top:-3px;
+	line-height: 76px;
+	position: absolute;
+	right: 10px;
+	margin-left: 5px;
+	top: -3px;
+	font-family: Oswald-Light;
 }

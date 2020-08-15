@@ -1,1 +1,1 @@
-background: #292929;
+# Sashay4Solar is a charity effort based in Louisville, KY
