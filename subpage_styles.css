@@ -1,0 +1,187 @@
+/*--- Font Families ---*/
+
+@font-face {font-family: "Oswald-Light"; src: url("fonts/Oswald-Light.ttf"); }
+@font-face {font-family: "Taviraj-Medium"; src: url("fonts/Taviraj-Medium.ttf"); }
+
+/*--- Base Styles ---*/
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*--- Subpage Navigation Menu Styles ---*/
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    font-family: Oswald-Light;
+}
+
+.overlay-content a:nth-child(1) {
+    text-decoration: underline;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+#menu_bar {
+    background-color: #3c2946;
+    padding: 12px 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    outline: 3px solid #b1a9b5;
+    border-bottom: 2px solid #76697d;
+    position: fixed;
+    top: 0;
+}
+
+#menu_button {
+    margin-right: 2%;
+    font-family: Taviraj-Medium;
+    font-size: 1.15em;
+    color: #ffd571;
+    background-color: #95a778;
+    border: 3px double #5d684b;
+    transition-duration: 0.6s;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+#menu_button:hover {
+    color: black;
+    background-color: #bbd196;
+}
+
+@media screen and (max-height: 450px) {
+.overlay a {font-size: 20px}
+.overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+}
+}
+
+/*--- Subpage Styles ---*/
+
+.meet_team_container {
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.meet_team_container_2 {
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#zeeshan_bhatti,
+#hamza_foy,
+#hassan_nasir,
+#arshak_naseer,
+#adam_zahaf {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 350px;
+    text-align: center;
+    max-height: 750px;
+}
+
+#zeeshan_bhatti h1,
+#hamza_foy h1,
+#hassan_nasir h1,
+#arshak_naseer h1,
+#adam_zahaf h1 {
+    font-size: 24px;
+    font-family: Taviraj-Medium;
+}
+
+#zeeshan_bhatti p,
+#hamza_foy p,
+#hassan_nasir p,
+#arshak_naseer p,
+#adam_zahaf p {
+    font-size: 18px;
+    font-family: Oswald-Light;
+}
+
+#zeeshan_bhatti button,
+#hamza_foy button,
+#hassan_nasir button,
+#arshak_naseer button,
+#adam_zahaf button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #95a778;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+
+#zeeshan_bhatti button:hover,
+#hamza_foy button:hover,
+#hassan_nasir button:hover,
+#zeeshan_bhatti a:hover,
+#hamza_foy a:hover,
+#hassan_nasir a:hover,
+#arshak_naseer button:hover,
+#adam_zahaf button:hover,
+#arshak_naseer a:hover,
+#adam_zahaf a:hover {
+    opacity: 0.7;
+}
+
+#zeeshan_bhatti a,
+#hamza_foy a,
+#hassan_nasir a,
+#arshak_naseer a,
+#adam_zahaf a {
+    font-size: 20px;
+    color: #95a778;
+    padding: 0 4px;
+}
+
+hr {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
