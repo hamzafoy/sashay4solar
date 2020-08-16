@@ -3,20 +3,28 @@
 @font-face {font-family: "Oswald-Light"; src: url("fonts/Oswald-Light.ttf"); }
 @font-face {font-family: "Taviraj-Medium"; src: url("fonts/Taviraj-Medium.ttf"); }
 
+
+
 /*--- Base Styles ---*/
+
+
 
 body {
     margin: 0;
     padding: 0;
 }
 
+
+
 /*--- Subpage Navigation Menu Styles ---*/
+
+
 
 .overlay {
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 3;
     left: 0;
     top: 0;
     background-color: rgb(0,0,0);
@@ -64,10 +72,12 @@ body {
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     outline: 3px solid #b1a9b5;
     border-bottom: 2px solid #76697d;
     position: fixed;
     top: 0;
+    z-index: 2;
 }
 
 #menu_button {
@@ -96,17 +106,49 @@ body {
 }
 }
 
-/*--- Subpage Styles ---*/
+
+
+/*--------------- Subpage Styles ------------------*/
+
+
+
+#title_banner {
+    margin-top: 8%;
+    text-align: center;
+    font-family: Oswald-Light;
+    font-size: 2.5em;
+    text-decoration: underline;
+}
+
+#title_banner_mission,
+#title_banner_show_tell {
+    margin-top: 8%;
+    margin-bottom: 4%;
+    text-align: center;
+    font-family: Oswald-Light;
+    font-size: 2.5em;
+    text-decoration: underline;
+}
+
+hr {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+
+
+/*--- Meet the Team Styles ---*/
+
+
 
 .meet_team_container {
-    margin-top: 10%;
+    margin-top: 4%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
 .meet_team_container_2 {
-    margin-top: 10%;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -121,6 +163,7 @@ body {
     max-width: 350px;
     text-align: center;
     max-height: 750px;
+    background-color: #e5e5e5;
 }
 
 #zeeshan_bhatti h1,
@@ -149,14 +192,15 @@ body {
     border: none;
     outline: 0;
     display: inline-block;
-    padding: 8px;
+    padding: 12px;
     color: white;
     background-color: #95a778;
     text-align: center;
     cursor: pointer;
-    width: 100%;
+    width: 95%;
     font-size: 18px;
-  }
+    border-radius: 25px;
+}
 
 #zeeshan_bhatti button:hover,
 #hamza_foy button:hover,
@@ -181,7 +225,141 @@ body {
     padding: 0 4px;
 }
 
-hr {
-    margin-top: 25px;
-    margin-bottom: 25px;
+#zeeshan_bhatti img:hover,
+#hamza_foy img:hover,
+#hassan_nasir img:hover,
+#arshak_naseer img:hover,
+#adam_zahaf img:hover {
+    transform: scale(1.15);
+}
+
+
+
+/*--- Our Mission Styles ---*/
+
+
+
+#mission_container {
+    padding: 0.1px 1% 3px 350px;
+    margin-right: 34%;
+    background: #e5e5e5;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#mission_container_2 {
+    padding: 0.1px 350px 3px 1%;
+    margin-left: 34%;
+    background: #e5e5e5;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-top: 24px;
+}
+
+#mission_container_3 {
+    padding: 0.1px 1% 3px 350px;
+    margin-right: 34%;
+    background: #e5e5e5;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-top: 24px;
+}
+
+#mission_container_4 {
+    padding: 0.1px 350px 3px 1%;
+    margin-left: 34%;
+    background: #e5e5e5;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+#mission_container h1,
+#mission_container_2 h1,
+#mission_container_3 h1,
+#mission_container_4 h1 {
+    font-family: Taviraj-Medium;
+    font-size: 1.5em;
+}
+
+#mission_container p,
+#mission_container_2 p,
+#mission_container_3 p,
+#mission_container_4 p {
+    font-family: Oswald-Light;
+    font-size: 0.9em;
+    text-align: justify;
+    letter-spacing: 0.1em;
+}
+
+#mission_container_2 h1,
+#mission_container_4 h1 {
+    text-align: right;
+}
+
+#mission_container_2 p,
+#mission_container_4 p {
+    text-align: justify;
+    text-align-last: right;
+}
+
+
+
+/*--- Show & Tell Styles ---*/
+
+
+
+.row {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+  }
+
+.column img {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.column img:hover {
+    opacity: 1;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container {
+    position: relative;
+    display: none;
+}
+
+#expandedImg {
+    display: flex;
+    margin: 0 auto;
+}
+
+#imgtext {
+    margin: 2% 0;
+    color: black;
+    font-size: 20px;
+    background: #e5e5e5;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 100%;
+    text-align: center;
+    padding: 1% 0;
+    font-family: Oswald-Light;
+}
+
+.closebtn {
+    position: absolute;
+    top: 536px;
+    right: 15px;
+    color: black;
+    font-size: 35px;
+    cursor: pointer;
 }
