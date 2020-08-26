@@ -27,22 +27,25 @@ body {
     z-index: 3;
     left: 0;
     top: 0;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.9);
+    background-color: rgba(255,255,255, 1);
     overflow-x: hidden;
     transition: 0.5s;
 }
 
 .overlay-content {
     position: relative;
-    top: 25%;
+    top: 8%;
     width: 100%;
     text-align: center;
     margin-top: 30px;
 }
 
+.sashayLogo {
+    opacity: 0.9;
+}
+
 .overlay a {
-    padding: 8px;
+    padding: 2px;
     text-decoration: none;
     font-size: 36px;
     color: #818181;

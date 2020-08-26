@@ -2,71 +2,77 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Hamza Foy">
-    <meta name="description" content="Sashay4Solar is a charitable project with the goal of erecting four solar arrays in the Russell neighborhood of West Louisville. 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Hamza Foy">
+  <meta name="description" content="Sashay4Solar is a charitable project with the goal of erecting four solar arrays in the Russell neighborhood of West Louisville. 
     These arrays will power 3-4 homes and prove an excellent pilot project for providing energy & economic relief.">
-    <title>Look upon our Works, ye mighty, & despair!</title>
-    <link rel="stylesheet" href="subpage_styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="script.js"></script>
+  <title>Look upon our Works, ye mighty, & despair!</title>
+  <link rel="stylesheet" href="subpage_styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="script.js"></script>
 </head>
 
 <body>
 
-    <!-- NAVIGATION MENU CODE START -->
+  <!-- NAVIGATION MENU CODE START -->
 
-    <div id="myNav" class="overlay">
+  <div id="myNav" class="overlay">
 
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
-        <div class="overlay-content">
-            <a href="index.html">Menu</a>
-            <a href="meet_the_team.html">Our Team</a>
-            <a href="mission.html">Our Mission</a>
-            <a href="#">Show & Tell</a>
-            <a href="contact_us.html">Contact Us</a>
-        </div>
-
+    <div class="overlay-content">
+      <img class="sashayLogo" height="250px" width="450px" src="img/sashay_4_solar.gif">
+      <a href="index.html">Menu</a>
+      <a href="meet_the_team.html">Our Team</a>
+      <a href="mission.html">Our Mission</a>
+      <a href="#">Show & Tell</a>
+      <a href="contact_us.html">Contact Us</a>
     </div>
 
-    <div id="menu_bar">
-        <button onclick="openNav()" id="menu_button">Menu</button>
+  </div>
+
+  <div id="menu_bar">
+    <button onclick="openNav()" id="menu_button">Menu</button>
+  </div>
+
+  <!-- NAVIGATION MENU CODE END -->
+
+  <div id="title_banner_show_tell">
+    Show & Tell - See our work so far!
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img src="img/show_tell_1.jpg" alt="An example of a vacant lot that we surveyed from the Landbank Authority."
+        width="300px" height="250px" onclick="myFunction(this);">
     </div>
-
-    <!-- NAVIGATION MENU CODE END -->
-
-    <div id="title_banner_show_tell">
-        Show & Tell - See our work so far!
+    <div class="column">
+      <img src="img/show_tell_2.jpg"
+        alt="A major milestone in the development of our project. We hosted numerous stakeholders and interested parties at Story Louisville early in our development."
+        width="300px" height="250px" onclick="myFunction(this);">
     </div>
+    <div class="column">
+      <img src="img/show_tell_3.jpg"
+        alt="Sy Safi of UberGreen Spaces breaks down variables affecting energy efficiency of homes." width="300px"
+        height="250px" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="img/show_tell_1.jpg" alt="Hello" width="300px" height="250px" onclick="myFunction(this);">
+    </div>
+  </div>
 
-    <div class="row">
-        <div class="column">
-          <img src="img/show_tell_1.jpg" alt="An example of a vacant lot that we surveyed from the Landbank Authority." width="300px" height="250px" onclick="myFunction(this);">
-        </div>
-        <div class="column">
-          <img src="img/show_tell_2.jpg" alt="A major milestone in the development of our project. We hosted numerous stakeholders and interested parties at Story Louisville early in our development." width="300px" height="250px" onclick="myFunction(this);">
-        </div>
-        <div class="column">
-          <img src="img/show_tell_3.jpg" alt="Sy Safi of UberGreen Spaces breaks down variables affecting energy efficiency of homes." width="300px" height="250px" onclick="myFunction(this);">
-        </div>
-        <div class="column">
-          <img src="img/show_tell_1.jpg" alt="Hello" width="300px" height="250px" onclick="myFunction(this);">
-        </div>
-      </div>
+  <div class="show_tell_container">
 
-      <div class="show_tell_container">
+    <div id="imgtext" style="visibility:hidden"></div>
 
-        <div id="imgtext" style="visibility:hidden"></div>
-      
-        <span onclick="this.parentElement.style.display='none'" style="visibility:hidden" class="closebtn">&times;</span>
+    <span onclick="this.parentElement.style.display='none'" style="visibility:hidden" class="closebtn">&times;</span>
 
-        <img id="expandedImg" style="width:95%">
-      
-        
+    <img id="expandedImg" style="width:95%">
 
-      </div>
+
+
+  </div>
 
 </body>
 
