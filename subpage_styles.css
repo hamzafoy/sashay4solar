@@ -257,6 +257,19 @@ hr {
     margin-top: 24px;
 }
 
+.mission_divider {
+    background-color: #3c2946;
+    color: white;
+    padding: 24px 0;
+    margin: 4vh 0;
+    text-align: center;
+    font-family: Taviraj-Medium;
+    font-size: 28px;
+    outline: 3px solid #b1a9b5;
+    border-bottom: 2px solid #76697d;
+    border-top: 2px solid #76697d;
+}
+
 #mission_container_3 {
     padding: 0.1px 1% 3px 350px;
     margin-right: 34%;
