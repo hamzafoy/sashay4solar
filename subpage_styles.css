@@ -379,3 +379,53 @@ hr {
     font-size: 35px;
     cursor: pointer;
 }
+
+
+
+/*--- Show & Tell Styles ---*/
+
+
+
+#mc_embed_signup {
+    border: 4px solid #bbd196;
+    outline: 3px solid #95a778;
+    margin-top: 18vh;
+    margin-left: 350px;
+    margin-right: 350px;
+    display: block;
+    text-align: center;
+}
+
+form h2 {
+    font-family: Taviraj-Medium;
+}
+
+#mc-embedded-subscribe-form {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.indicates-required {
+    padding-bottom: 6px;
+    font-family: Oswald-Light;
+}
+
+.mc-field-group {
+    display: flex;
+    flex-direction: column;
+    font-family: Oswald-Light;
+}
+
+#mc-embedded-subscribe {
+    margin-top: 6px;
+    margin-bottom: 30px;
+    background-color: #95a778;
+    padding: 5px 20px;
+    text-align: center !important;
+}
+
+#mc-embedded-subscribe:hover {
+    background-color: #bbd196;
+}
